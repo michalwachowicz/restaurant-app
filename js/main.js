@@ -1,0 +1,2 @@
+(()=>{"use strict";console.log("Have a nice day! ;)")})();
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi4vanMvbWFpbi5qcyIsIm1hcHBpbmdzIjoibUJBRUFBLFFBQVFDLElBQUksd0IiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9yZXN0YXVyYW50LXBhZ2UvLi9zcmMvanMvaW5kZXguanMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICcuLi9zY3NzL2luZGV4LnNjc3MnXG5cbmNvbnNvbGUubG9nKCdIYXZlIGEgbmljZSBkYXkhIDspJylcbiJdLCJuYW1lcyI6WyJjb25zb2xlIiwibG9nIl0sInNvdXJjZVJvb3QiOiIifQ==
