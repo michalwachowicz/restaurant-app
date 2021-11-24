@@ -4,10 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./css/main.css" />
     <title>Ramen Restaurant</title>
   </head>
   <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="header__logo">ラーメン</h1>
+        <nav class="nav">
+          <ul class="nav__list mobile-hidden">
+            <li class="nav__item">
+              <a href="#" class="nav__item__link nav__item__link--active">
+                Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__item__link">Menu</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__item__link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="btn btn--menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="btn__icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </header>
+      <div id="content"></div>
+    </div>
     <script src="./js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,51 @@
+@use '../abstracts' as *;
+
+.nav {
+  &__list {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    inset: 0;
+    background-color: rgba($color: $black, $alpha: 0.9);
+
+    @include desktop {
+      position: static;
+      flex-direction: row;
+      gap: 5rem;
+      // justify-content: flex-start;
+      background: none;
+    }
+  }
+
+  &__item {
+    margin: 1rem 0;
+
+    @include desktop {
+      margin: 0;
+    }
+
+    &__link {
+      color: $white;
+      font-size: 3rem;
+      font-weight: 300;
+      text-decoration: none;
+
+      &:hover {
+        color: $red;
+      }
+
+      @include desktop {
+        color: $black;
+        font-size: 1.5rem;
+      }
+
+      &--active {
+        color: $red;
+        font-weight: 400;
+      }
+    }
+  }
+}

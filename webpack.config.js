@@ -22,4 +22,8 @@ module.exports = {
   plugins: [new MiniCssExtractPlugin({ filename: '../css/[name].css' })],
   mode: 'production',
   devtool: 'inline-source-map',
+  devServer: {
+    static: './dist',
+    hot: true,
+  },
 }
