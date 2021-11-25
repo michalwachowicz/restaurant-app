@@ -1,5 +1,9 @@
 .animation-bounce {
-  animation: bounce 0.75s ease-in-out;
+  animation: bounce 0.5s ease-in-out;
+}
+
+.animation-fade {
+  animation: fade 0.5s forwards;
 }
 
 @keyframes bounce {
@@ -13,5 +17,15 @@
 
   100% {
     transform: translateX(0);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
