@@ -1,0 +1,17 @@
+.animation-bounce {
+  animation: bounce 0.75s ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(100%);
+  }
+
+  80% {
+    transform: translateX(-10%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

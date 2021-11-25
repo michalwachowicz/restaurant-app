@@ -26,7 +26,9 @@ const contentGenerator = (() => {
     _clear()
     _getNavLink(page).classList.add('nav__item__link--active')
 
-    contentElement.appendChild(pages[page])
+    const node = pages[page]
+    contentElement.appendChild(node)
+    node.classList.add('animation-bounce')
   }
 
   return { generateContent }
