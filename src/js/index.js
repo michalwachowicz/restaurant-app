@@ -1,3 +1,4 @@
 import '../scss/index.scss'
+import ContentGenerator from './generator'
 
-console.log('Have a nice day! ;)')
+ContentGenerator.generateContent('home')
