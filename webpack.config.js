@@ -14,16 +14,22 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/,
-        type: 'asset/resource',
+        test: /\.(png|jpe?g|webp|git|svg|)$/i,
+        use: [
+          {
+            loader: `img-optimize-loader`,
+            options: {
+              compress: {
+                webp: true,
+                disableOnDevelopment: true,
+              },
+            },
+          },
+        ],
       },
     ],
   },
   plugins: [new MiniCssExtractPlugin({ filename: '../css/[name].css' })],
   mode: 'production',
   devtool: 'inline-source-map',
-  devServer: {
-    static: './dist',
-    hot: true,
-  },
 }
