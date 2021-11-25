@@ -1,43 +1,47 @@
 @use '../abstracts' as *;
 
 .btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: none;
   border: none;
   cursor: pointer;
 
   &--primary {
     position: relative;
-    margin-top: 3rem;
-    margin-left: 0.5rem;
-    border-radius: 0.5rem;
-    min-width: 12rem;
-    height: 4rem;
-    background-color: $red;
-    color: $white;
-    font-size: 1.5rem;
+    display: block;
+    width: 12.5rem;
+    height: 4.5rem;
+    margin-top: 2.5rem;
 
-    &::before {
-      content: '';
+    & > * {
       position: absolute;
-      border: 2px solid $black;
+      top: 0;
+      left: 0;
+      width: 12rem;
+      height: 4rem;
       border-radius: 0.5rem;
-      width: 95%;
-      height: 95%;
-      z-index: -1;
-      transform: translate(-0.5rem, 0.5rem);
     }
 
     &:hover,
     &:active {
-      top: 0.5rem;
-      right: 0.5rem;
-
-      &::before {
+      .box {
         transform: translate(0, 0);
       }
+    }
+
+    .box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $red;
+      color: $white;
+      font-size: 1.5rem;
+      z-index: 1;
+      transform: translate(0.5rem, -0.5rem);
+      transition: transform 0.2s ease;
+    }
+
+    .border {
+      border: 2px solid $black;
     }
   }
 

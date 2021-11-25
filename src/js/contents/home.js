@@ -1,4 +1,5 @@
 import { getImage } from '../ramenImg'
+import { getPrimaryButton } from '../components/button'
 import ContentGenerator from '../generator'
 
 const content = (() => {
@@ -16,18 +17,13 @@ const content = (() => {
   subheading.textContent =
     'Your Favorite Ramen For Delivery and Take-Out with Just A Click!'
 
-  const button = document.createElement('button')
-  button.classList.add('btn')
-  button.classList.add('btn--primary')
-  button.setAttribute('type', 'button')
-  button.textContent = 'Order Now'
-  button.addEventListener('click', () =>
-    ContentGenerator.generateContent('menu')
-  )
-
   homeText.appendChild(h1)
   homeText.appendChild(subheading)
-  homeText.appendChild(button)
+  homeText.appendChild(
+    getPrimaryButton('Order Now', 'button', () =>
+      ContentGenerator.generateContent('menu')
+    )
+  )
 
   const homeImg = document.createElement('div')
   homeImg.className = 'home__img'
