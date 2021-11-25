@@ -1,0 +1,9 @@
+@use '../abstracts/mixins' as *;
+
+#content {
+  margin-top: 6rem;
+
+  @include desktop {
+    margin-top: 3.5rem;
+  }
+}

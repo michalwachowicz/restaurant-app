@@ -1,0 +1,30 @@
+@use '../abstracts' as *;
+
+.home {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+
+  @include desktop {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  & > * {
+    flex: 0 1 50%;
+  }
+
+  &__img {
+    display: none;
+
+    @include desktop {
+      display: flex;
+
+      img {
+        margin: auto;
+        width: 90%;
+      }
+    }
+  }
+}
