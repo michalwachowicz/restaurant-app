@@ -10,12 +10,16 @@
     list-style: none;
     inset: 0;
     background-color: rgba($color: $black, $alpha: 0.9);
+    z-index: 9998;
+
+    * {
+      z-index: 9998;
+    }
 
     @include desktop {
       position: static;
       flex-direction: row;
       gap: 5rem;
-      // justify-content: flex-start;
       background: none;
     }
   }
