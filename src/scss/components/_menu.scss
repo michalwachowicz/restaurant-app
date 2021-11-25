@@ -1,0 +1,85 @@
+@use '../abstracts' as *;
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 7.5rem;
+  padding-top: 4rem;
+
+  @include desktop {
+    flex-direction: row;
+    gap: 3.5rem;
+  }
+
+  &__card {
+    $width: 380px;
+    position: relative;
+    flex: 1;
+    padding: 2rem;
+    padding-top: 96px;
+    max-width: $width;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.25);
+    text-align: center;
+    background-color: $white;
+
+    &__title {
+      margin-bottom: 0.75rem;
+      color: $black;
+      font-weight: 600;
+      @include fluid-type(320px, $width, 1.5rem, 2rem);
+    }
+
+    &__desc {
+      margin-bottom: 2.5rem;
+      color: $gray;
+      font-size: 1.2rem;
+    }
+
+    &__price-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__size {
+      color: $red;
+      font-weight: 600;
+    }
+
+    &__price {
+      color: $black;
+      font-weight: 300;
+    }
+
+    &__img {
+      position: absolute;
+      top: -70px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 160px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &--primary {
+      background-color: $red;
+
+      .menu__card__size {
+        color: $white;
+      }
+    }
+  }
+}

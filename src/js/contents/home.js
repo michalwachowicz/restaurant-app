@@ -1,4 +1,4 @@
-import RamenImage from '../ramenImg'
+import { getImage } from '../ramenImg'
 import ContentGenerator from '../generator'
 
 const content = (() => {
@@ -31,7 +31,7 @@ const content = (() => {
 
   const homeImg = document.createElement('div')
   homeImg.className = 'home__img'
-  homeImg.appendChild(RamenImage.element)
+  homeImg.appendChild(getImage())
 
   element.appendChild(homeText)
   element.appendChild(homeImg)
