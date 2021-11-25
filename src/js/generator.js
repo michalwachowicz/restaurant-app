@@ -1,5 +1,6 @@
 import Home from './contents/home'
 import Menu from './contents/menu'
+import Contact from './contents/contact'
 
 const contentGenerator = (() => {
   const contentElement = document.querySelector('#content')
@@ -8,6 +9,7 @@ const contentGenerator = (() => {
   const pages = {
     home: Home.element,
     menu: Menu.element,
+    'contact-us': Contact.element,
   }
 
   const _getNavLink = (page) =>

@@ -1,0 +1,69 @@
+@use '../abstracts' as *;
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+  width: 100%;
+
+  @include desktop {
+    flex-direction: row;
+  }
+
+  & > * {
+    flex: 0 1 50%;
+    width: 100%;
+  }
+
+  &__info {
+    margin-top: 1.5rem;
+  }
+
+  &__form {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: $black;
+    font-size: 1.5rem;
+
+    &:first-child {
+      margin-top: 1rem;
+    }
+  }
+
+  &__input,
+  &__message {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: $black;
+    font-size: 1.2rem;
+  }
+
+  &__input {
+    height: 2.5rem;
+    border: 1px solid $black;
+    margin-bottom: 1.5rem;
+  }
+
+  &__message {
+    height: 5rem;
+    border: none;
+    background-color: #f1f3f5;
+    font-family: $font-stack;
+  }
+
+  .btn {
+    margin-left: auto;
+    margin-right: -0.5rem;
+  }
+}
