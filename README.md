@@ -28,7 +28,7 @@ I designed the entire app before coding it!
 
 ## Live Demo
 
-👉 [Live demo link](https://michalwachowicz.github.io/restaurant-page/ 'Restaurant App')
+👉 [Live demo link](https://michalwachowicz.github.io/restaurant-app/ 'Restaurant App')
 
 ## 🤝 Contributing
 
